@@ -10,14 +10,15 @@ class Performance:
         for i in range(len(self.PastResults)):
             if self.PastResults[i] == 0:
                 LossCount+=1
-              
+#here we are trying to count number of losses(0) in the array               
             else :
                 LossCount=0
                 WinCount+=1
-                
+#here  if loss count is greater than or equal to 2  we can calculate successive loss count             
             if LossCount>=2:
                 SuccessiveLostCount+=1
-        
+
+# if successive losscount is greater than 1 it will display the information of that team        
         if SuccessiveLostCount > 1:
             print("Team Name: ",self.Name)
             print("Total Points:" , self.Points)
@@ -26,7 +27,9 @@ class Performance:
             print("Average point is " , Average)   
                
 
-
+# creating array which stores last 5 match results
+# 0 represents loss and 1 represents win 
+#by creating object for each team for class name performance we can fetch the results 
 
 
 Gt_last=[1,1,0,0,1]
