@@ -21,7 +21,9 @@ class Performance:
         if SuccessiveLostCount > 1:
             print("Team Name: ",self.Name)
             print("Total Points:" , self.Points)
-            print("total sucessive lost count : " , SuccessiveLostCount)   
+            print("total sucessive lost count : " , SuccessiveLostCount)
+            Average= (WinCount * 2)/5
+            print("Average point is " , Average)   
                
 
 
